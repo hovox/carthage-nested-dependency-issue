@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		922682851CA936E400A35936 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922682841CA936E400A35936 /* Bolts.framework */; };
 		9248F9941CA4458D00D07278 /* libthatcontainsbolts.h in Headers */ = {isa = PBXBuildFile; fileRef = 9248F9931CA4458D00D07278 /* libthatcontainsbolts.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9248F99D1CA446BE00D07278 /* SomeClassWhereIncludedBolts.h in Headers */ = {isa = PBXBuildFile; fileRef = 9248F99B1CA446BE00D07278 /* SomeClassWhereIncludedBolts.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9248F99E1CA446BE00D07278 /* SomeClassWhereIncludedBolts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9248F99C1CA446BE00D07278 /* SomeClassWhereIncludedBolts.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		922682841CA936E400A35936 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Carthage/Build/iOS/Bolts.framework; sourceTree = "<group>"; };
 		9248F9901CA4458D00D07278 /* libthatcontainsbolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libthatcontainsbolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9248F9931CA4458D00D07278 /* libthatcontainsbolts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libthatcontainsbolts.h; sourceTree = "<group>"; };
 		9248F9951CA4458D00D07278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -25,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				922682851CA936E400A35936 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +37,7 @@
 		9248F9861CA4458D00D07278 = {
 			isa = PBXGroup;
 			children = (
+				922682841CA936E400A35936 /* Bolts.framework */,
 				9248F9921CA4458D00D07278 /* libthatcontainsbolts */,
 				9248F9911CA4458D00D07278 /* Products */,
 			);
@@ -241,7 +245,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = libthatcontainsbolts/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -259,7 +263,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = libthatcontainsbolts/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
