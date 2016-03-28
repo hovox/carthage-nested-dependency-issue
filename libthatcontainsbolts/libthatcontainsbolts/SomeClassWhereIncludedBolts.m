@@ -11,8 +11,8 @@
 @implementation SomeClassWhereIncludedBolts
 
 
--(BFTask *)someMethodThatReturnsBoltClass {
-    return [BFTask taskWithResult:@(1)];
+-(int)someMethodThatReturnsBoltClass {
+    return 10;
 }
 
 @end

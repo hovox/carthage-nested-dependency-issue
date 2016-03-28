@@ -7,10 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Bolts/Bolts.h>
 
 @interface SomeClassWhereIncludedBolts : NSObject
 
--(BFTask *)someMethodThatReturnsBoltClass;
+-(int)someMethodThatReturnsBoltClass;
 
 @end
