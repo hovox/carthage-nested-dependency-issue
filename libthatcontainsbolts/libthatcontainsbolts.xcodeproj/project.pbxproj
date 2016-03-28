@@ -85,7 +85,6 @@
 				9248F98C1CA4458D00D07278 /* Frameworks */,
 				9248F98D1CA4458D00D07278 /* Headers */,
 				9248F98E1CA4458D00D07278 /* Resources */,
-				9248F9A11CA446FB00D07278 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -136,23 +135,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		9248F9A11CA446FB00D07278 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Bolts.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9248F98B1CA4458D00D07278 /* Sources */ = {
@@ -311,6 +293,7 @@
 				9248F99A1CA4458D00D07278 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
